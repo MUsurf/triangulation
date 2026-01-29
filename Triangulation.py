@@ -53,19 +53,19 @@ class Triangulation:
             Cam2zdistance = (1/(math.sin(math.radians(topAngleY))))*(math.sin(math.radians(cam2zangle)))
         
         #testing prints
-        print("Cam1xdistance:", Cam1xdistance)
-        print("Cam2xdistance:", Cam2xdistance)
+        #print("Cam1xdistance:", Cam1xdistance)
+        #print("Cam2xdistance:", Cam2xdistance)
 
-        print("Cam1zdistance:", Cam1zdistance)
-        print("Cam2zdistance:", Cam2zdistance)
+        # print("Cam1zdistance:", Cam1zdistance)
+        # print("Cam2zdistance:", Cam2zdistance)
 
         #finds the length of the distance from the object to the origin
         #to do this, I use the pythagorean theorem
         #I don't know if this works, but I'm trying it
         Cam1Distance = math.sqrt((Cam1xdistance**2)+(Cam1zdistance**2))
         Cam2Distance = math.sqrt((Cam2xdistance**2)+(Cam2zdistance**2))
-        print("distance Cam1:", Cam1Distance)
-        print("distance Cam2:", Cam2Distance)
+        # print("distance Cam1:", Cam1Distance)
+        # print("distance Cam2:", Cam2Distance)
 
         #finds the 3D vector from each camera to the object
         cam1Vector = [v * Cam1Distance for v in find3DVector(cam1X, cam1Z)]
