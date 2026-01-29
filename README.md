@@ -5,7 +5,9 @@ The purpose of this function is to find the distance using 2 cameras.
 
 ## Camera Setup
 Put 2 cameras a set distance apart and facing the same direction
+
 These cameras should be able to detect the object
+
 Each camera extracts an X degree and a Y degree angle of the object relative to the camera
 
 ## How it works
@@ -14,7 +16,9 @@ Input the the X and Y angle of each camera:
 ((int cam1X), (int cam1Y), (int cam2X), (int cam2Y))
 
 The function gets the x distance and the y distance the object *relative to Camera one*
+
 Then, it finds the total distance using the pythagorean therom.
+
 It then returns the distance of camera one to the object *relative ot the distnace the cameras are apart*
 
 ## Why it is important
